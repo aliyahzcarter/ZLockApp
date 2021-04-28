@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".GeneratePass">
+
+    <TextView
+        android:id="@+id/headingtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Generate Password"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"/>
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_below="@id/headingtitle"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textjson"
+        android:layout_width="200dp"
+        android:background="#EAEAEA"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        >
+    <Button
+        android:id="@+id/generatebtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/round_button_green"
+        android:text="Generate"
+        android:layout_weight="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        />
+
+        <Button
+            android:id="@+id/copybtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_button_green"
+            android:text="Copy"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

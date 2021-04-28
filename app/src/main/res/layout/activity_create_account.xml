@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:background="@color/colorPrimary"
+    tools:context=".CreateAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Create Account"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"/>
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"/>
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:shape_roundRect_topRightRadius="10dp"
+        app:shape_roundRect_topLeftRadius="10dp"
+        app:shape_roundRect_bottomRightRadius="10dp"
+        app:shape_roundRect_bottomLeftRadius="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+
+        <EditText
+            android:id="@+id/accountname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="text"
+            android:hint="Name"
+            />
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:shape_roundRect_topRightRadius="10dp"
+        app:shape_roundRect_topLeftRadius="10dp"
+        app:shape_roundRect_bottomRightRadius="10dp"
+        app:shape_roundRect_bottomLeftRadius="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            />
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:shape_roundRect_topRightRadius="10dp"
+        app:shape_roundRect_topLeftRadius="10dp"
+        app:shape_roundRect_bottomRightRadius="10dp"
+        app:shape_roundRect_bottomLeftRadius="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="numberPassword"
+            android:maxLength="5"
+            android:hint="Password (5 digits)"
+            />
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:shape_roundRect_topRightRadius="10dp"
+            app:shape_roundRect_topLeftRadius="10dp"
+            app:shape_roundRect_bottomRightRadius="10dp"
+            app:shape_roundRect_bottomLeftRadius="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:background="@color/white"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:inputType="numberPassword"
+                android:maxLength="5"
+                android:hint="Confirm Password"
+                />
+
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shape_roundRect_topRightRadius="10dp"
+        app:shape_roundRect_topLeftRadius="10dp"
+        app:shape_roundRect_bottomRightRadius="10dp"
+        app:shape_roundRect_bottomLeftRadius="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/securityQues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:inputType="textMultiLine"
+            android:hint="Write your secret question?"
+            />
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shape_roundRect_topRightRadius="10dp"
+        app:shape_roundRect_topLeftRadius="10dp"
+        app:shape_roundRect_bottomRightRadius="10dp"
+        app:shape_roundRect_bottomLeftRadius="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/securityQuesAns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:inputType="textMultiLine"
+            android:hint="Answer"
+            />
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        >
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/round_button_green"
+                android:textColor="@color/colorPrimary"
+                android:text="Create"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentBottom="true"
+                />
+
+
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
